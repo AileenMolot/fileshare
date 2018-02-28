@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" type="text/css" href="html5.css"/>
+  <title>John Smith</title>
+</head>
+
+<body>
+  <header>
+        <img src="./img/folder-icon.png" alt="Папка" height="42" width="42" ismap>
+        <b>Файловое хранилище v 0.01 (Потеряй свои файлы красиво ;))</b> 
+         <img src="./img/folder-icon.png" alt="Папка" height="42" width="42" ismap>
+      <hr/>
+      <p>Вы вошли в систему как <b>John Smith </b><a href="fileshare.html">Выйти</a></p>
+  </header>
+    
+    <div id="left_part">
+        <h3>Можно загружать:</h3>
+        <p>ZIP (до 20 Мб)</p>
+        <p>DOCX (до 40 Мб)</p>
+        <p>PPTX (до 50 Мб)</p>
+        <br/>
+        <h3>Использовано:</h3>
+        <p>27.34 Мб из 100 Мб</p>
+    </div>
+    
+     <div id="right_part">
+        <h3>Статистика:</h3>
+        <p>Пользователей: 123</p>
+        <p>Файлов: 1234</p>
+        <p>Объем: 2345 Мб</p>
+        <p>Объем / польз: 45 Мб</p>
+    </div>
+    
+    <section>
+        <table>
+            <tr>
+                <td>Файл</td>
+                <td>Размер (Кб)</td>
+                <td>Дата и время</td>
+                <td>Удалить</td>
+            </tr>
+            <tr>
+                <td><a href="#">Это_архив_с_русским_именем.zip</a></td>
+                <td>132.22</td>
+                <td>2014.02.28 18:01:15</td>
+                <td><a href="#">Удалить</a></td>
+            </tr>
+            <tr>
+                <td><a href="#">_www_app.zip</a></td>
+                <td>132.45</td>
+                <td>2014.02.28 18:24:54</td>
+                <td><a href="#">Удалить</a></td>
+            </tr>
+        </table>
+        
+        <fieldset>
+            <legend>Загрузить новый файл</legend>
+            <input type="file" name="Choose"><br/>
+            <button>Загрузить</button>
+        </fieldset>
+        
+        <fieldset>
+            <legend>Запросить с удаленного сервера</legend>
+            <input type="text" ><br/>
+            <label for="ok">Поместить в хранилище:</label>
+            <input type="checkbox" name="answer" id="ok"><br/>
+            <button>Запросить</button>
+        </fieldset>
+                
+    </section>
+    
+
+
+  <footer>
+    <p>(c)2018, EPAM, Alina Molot</p>
+  </footer>
+</body>
+
+</html>

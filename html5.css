@@ -1,0 +1,105 @@
+﻿*
+{
+    margin: 0;
+    padding: 0;
+}
+body 
+{
+    font-family: Arial, Sans-Serif;
+    width: 100%;
+    height: 100%;
+    background: url(./img/flowers.jpg);
+    background-size: 100%;  
+}
+
+header
+{
+    display:block;
+    background-color: rgba(78, 75, 87, 0.8);
+    color:White;
+    text-align:center;
+    height: 10%;
+ 
+}
+
+header p
+{
+    color: Black;
+    text-align:right;
+    font-size: medium;   
+}
+#left_part{
+    text-align: center;
+    float: left;
+    width: 25%;
+    padding-top: 5%;
+}
+
+section
+{
+    padding: 15;
+    margin-left: auto;
+    margin-right: auto;
+    background: rgba(110, 84, 171, 0.7);
+    text-align: center;
+    align-items: center;
+    width: 50%;
+    height: 80%;
+    padding-top: 5%;
+}
+section p{
+    font-size: medium;
+    text-align: left;
+   padding-right: 20%;
+    padding-left: 35%;
+}
+button{
+    height: 5%;
+    width: 10%;
+    font-size: small;
+    margin-right: 20%;
+    color: black;
+}
+
+
+#right_part{
+    text-align: center;
+    float: right;
+    width: 25%;
+    padding-top: 5%;
+}
+table{
+    align-content: center;
+    border: 1px solid lightgrey;
+    width: 100%;
+}
+
+td{
+    border-right: 1px solid lightgrey;
+    border-collapse: collapse;
+}
+
+tr{
+    border-bottom: 1px solid lightgrey;
+}
+
+fieldset{
+    border: 1px solid lightgrey;
+    
+}
+
+fieldset button{
+    width: 85px;
+    height: 25px;
+}
+
+footer
+{
+    
+    color:white;
+    background-color:rgba(78, 75, 87, 0.8);
+    text-align:center;
+    height: 10%;
+
+
+}
