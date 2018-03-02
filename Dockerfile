@@ -8,7 +8,7 @@ RUN git clone https://github.com/AileenMolot/HTML.git -b master --single-branch 
 RUN echo "\
 server {\n\
     listen       80;\n\
-    server_name  localhost;\n\
+    server_name  fileshare;\n\
         location / {\n\
         root   /usr/share/nginx/html/fileshare;\n\
         index  index.html index.htm;\n\
