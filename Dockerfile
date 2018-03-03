@@ -12,7 +12,7 @@ server {\n\
     server_name  fileshare;\n\
         location / {\n\
         root   /usr/share/nginx/html/fileshare;\n\
-        index  index.html index.htm;\n\
+        index  index.html index.htm fileshare.html;\n\
     }\n\
 \n\
     error_page   500 502 503 504  /50x.html;\n\
