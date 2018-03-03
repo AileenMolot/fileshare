@@ -1,5 +1,5 @@
 FROM nginx
-LABEL maintainer="serhii.dovhan@gmail.com"
+LABEL maintainer="Alina"
 
 RUN apt update && apt full-upgrade -y && apt install git -y
 
