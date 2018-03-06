@@ -1,4 +1,4 @@
-FROM nginx
+FROM nginx:latest
 LABEL maintainer="Alina"
 
 RUN apt update && apt full-upgrade -y && apt install git -y
