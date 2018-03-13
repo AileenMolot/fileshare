@@ -1,23 +1,11 @@
-FROM nginx
-LABEL maintainer="Alina"
+FROM nginx:latest
+LABEL maintainer="Aileen Molot"
 
+#Install OS updates
 RUN apt update && apt full-upgrade -y && apt install git -y
 
-RUN git clone https://github.com/AileenMolot/HTML.git -b master --single-branch /usr/share/nginx/html/fileshare/
-#RUN git clone https://github.com/SerhiiD/HTML.git /usr/share/nginx/html/fileshare/
+#Copy site to WEB-server
+COPY src/main/html /usr/share/nginx/html/fileshare
 
-RUN echo "\
-server {\n\
-    listen       80;\n\
-    server_name  fileshare;\n\
-        location / {\n\
-        root   /usr/share/nginx/html/fileshare;\n\
-        index  index.html index.htm fileshare.html;\n\
-    }\n\
-\n\
-    error_page   500 502 503 504  /50x.html;\n\
-    location = /50x.html {\n\
-        root   /usr/share/nginx/html;\n\
-    }\n\
-}\n\
-" > /etc/nginx/conf.d/default.conf
+#Configure WEB-server
+COPY etc/nginx/conf.d/default.conf /etc/nginx/conf.d/default.conf

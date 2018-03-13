@@ -34,25 +34,30 @@
     </div>
     
     <section>
-        <table>
-            <tr>
-                <td>Файл</td>
-                <td>Размер (Кб)</td>
-                <td>Дата и время</td>
-                <td>Удалить</td>
-            </tr>
-            <tr>
-                <td><a href="#">Это_архив_с_русским_именем.zip</a></td>
-                <td>132.22</td>
-                <td>2014.02.28 18:01:15</td>
-                <td><a href="#">Удалить</a></td>
-            </tr>
-            <tr>
-                <td><a href="#">_www_app.zip</a></td>
-                <td>132.45</td>
-                <td>2014.02.28 18:24:54</td>
-                <td><a href="#">Удалить</a></td>
-            </tr>
+        <table id="files">
+            <script src="./tableSort.js"></script>
+            <thead>
+                <tr>
+                    <th data-type="string">Файл</th>
+                    <th data-type="number">Размер (Кб)</th>
+                    <th data-type="string">Дата и время</th>
+                    <th>Удалить</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><a href="#">Это_архив_с_русским_именем.zip</a></td>
+                    <td>134.22</td>
+                    <td>2014.02.28 18:01:15</td>
+                    <td><a href="#">Удалить</a></td>
+                </tr>
+                <tr>
+                    <td><a href="#">_www_app.zip</a></td>
+                    <td>132.45</td>
+                    <td>2014.02.28 18:24:54</td>
+                    <td><a href="#">Удалить</a></td>
+                </tr>
+            </tbody>
         </table>
         
         <fieldset>

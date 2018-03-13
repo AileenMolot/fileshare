@@ -83,6 +83,13 @@ td{
 tr{
     border-right: 2px solid darkgrey;
 }
+th {
+    cursor: pointer;
+}
+
+th:hover {
+    background: darkgrey;
+}
 
 fieldset{
     border-right: 2px solid darkgrey;
