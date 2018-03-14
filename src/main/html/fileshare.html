@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Файловое хранилище</title>
     <link rel="stylesheet" type="text/css" href="html5.css"/>
+    <script type="text/javascript" src="./ApplicationForm.js"></script>
 </head>
 <body>
     <header>
@@ -28,13 +29,15 @@
     </div>
     
     <section>
-        <p>Логин:<br>
-            <input type="email" name="Логин" autocomplete="on"> </p>
-        <p>Пароль:<br>
-            <input type="password" name="Пароль" autocomplete="on"> </p>
-        <p>Запомнить меня
-            <input type="checkbox" name="Запомнить" autocomplete="off"> </p>
-        <button name="GO!" onclick=location.href="fileshareLogged.html">Go!</button>
+        <form action="fileshareLogged.html" onsubmit="return testLogin(this.login.value); return ">
+            <label>E-mail:</label><br>
+                <input input type="text" name="login" class="loginField"><br>
+            <label>Пароль:</label><br>
+                <input type="password" name="password" class="passField"><br>
+            <label>Запомнить меня</label>
+                <input type="checkbox" name="Запомнить" autocomplete="off"><br>
+            <button name="GO!">Go!</button>
+        </form>
     </section>
     
   <footer>

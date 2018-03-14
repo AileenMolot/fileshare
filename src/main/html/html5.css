@@ -48,17 +48,16 @@ section
     height: 80%;
     padding-top: 5%;
 }
-section p{
+section form{
     font-size: medium;
     text-align: left;
-   padding-right: 20%;
-    padding-left: 35%;
+    padding-left: 30%;
 }
-button{
+form button{
     height: 5%;
     width: 10%;
     font-size: small;
-    margin-right: 20%;
+    margin-right: 0%;
     color: black;
 }
 
