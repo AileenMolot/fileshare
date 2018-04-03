@@ -1,4 +1,4 @@
-node("docker") {
+node {
     stage('Get Source') {
         git 'https://github.com/AileenMolot/fileshare.git'
     }
