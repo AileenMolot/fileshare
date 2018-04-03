@@ -1,4 +1,4 @@
-node {
+pipeline {
     stage('Preparation') {
         git 'https://github.com/AileenMolot/fileshare.git'
     }
