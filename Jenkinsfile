@@ -1,5 +1,5 @@
 node {
-    stage('Preparation') {
+    stage('Get Source') {
         git 'https://github.com/AileenMolot/fileshare.git'
     }
     
@@ -12,7 +12,7 @@ node {
         fileshareImage = docker.build("fileshare:release-${git_tag}-${env.BUILD_ID}")
     }
    
-    stage ('Docker push') {
+    stage ('Docker Push') {
         docker.withRegistry('https://483149632405.dkr.ecr.eu-west-1.amazonaws.com', 'ecr:eu-west-1:jenkins') {
             fileshareImage.push()
         }
